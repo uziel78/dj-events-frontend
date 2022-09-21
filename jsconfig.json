@@ -1,0 +1,11 @@
+//added Module Aliases to make it easier to generate import paths
+//example: @/components can be used anywhere to take one to "components/*"
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/components/*": ["components/*"],
+      "@/styles/*": ["styles/*"]
+    }
+  }
+}

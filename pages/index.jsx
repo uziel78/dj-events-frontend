@@ -11,7 +11,7 @@ export default function HomePage({ events }) {
   );
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const res = await fetch(`${API_URL}/api/events`);
   const events = await res.json();
 
@@ -19,5 +19,6 @@ export async function getServerSideProps() {
 
   return {
     props: { events },
+    revalidate: 1,
   };
 }

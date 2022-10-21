@@ -5,7 +5,7 @@ import { API_URL } from '@/config/index';
 
 export default function HomePage({ events }) {
   // logs client-side/browser
-  //console.log(events);
+  console.log(events);
   return (
     <Layout>
       <h1>Upcoming Events</h1>
@@ -25,14 +25,15 @@ export default function HomePage({ events }) {
 }
 
 export async function getStaticProps() {
+  //const res = await fetch(`${API_URL}/api/events?_sort=date:ASC_limit=3`);
   const res = await fetch(`${API_URL}/api/events`);
+  //const res = await fetch(`${API_URL}/api/events?[populate]=*`);
   const events = await res.json();
 
   //console.log(events);  -logs server-side/terminal
 
   return {
-    //slice method used to show first 3 results only
-    props: { events: events.slice(0, 3) },
+    props: { events },
     revalidate: 1,
   };
 }

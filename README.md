@@ -1,3 +1,17 @@
+## About
+
+This is a project from an udemy course (https://www.udemy.com/course/nextjs-dev-to-deployment/), by Brad traversy. Unfortunatley, it is a bit outdated in terms of Strapi/Claudinary integration, so following it doesn't really get one anywhere pars section 4 in the course.
+
+The project uses:
+
+- next.js
+- Strapi (backend, se separate github repository)
+- Cloudinary (for image hosting with automatic size variations)
+- Moment (date/time integration)
+- qs (querystring parsing and stringifying library)
+- react-icons/fa (fontawesome icons)
+- react toastify (toasts)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

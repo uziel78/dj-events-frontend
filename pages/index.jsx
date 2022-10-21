@@ -33,7 +33,7 @@ export async function getStaticProps() {
   //console.log(events);  -logs server-side/terminal
 
   return {
-    props: { events },
+    props: { events: events.slice(0, 3) },
     revalidate: 1,
   };
 }

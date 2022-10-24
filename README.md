@@ -1,8 +1,10 @@
 ## About
 
-This is a project from an udemy course (https://www.udemy.com/course/nextjs-dev-to-deployment/), by Brad traversy. Unfortunatley, it is a bit outdated in terms of Strapi/Claudinary integration, so following it doesn't really get one anywhere pars section 4 in the course.
+This is a project from an udemy course (https://www.udemy.com/course/nextjs-dev-to-deployment/), by Brad traversy. Unfortunatley, it is a bit outdated in terms of Strapi/Claudinary integration (Last updated 5/2021), so following it doesn't really get one anywhere further than section 4 in the course (see user comments).
 
-The project uses:
+github Link (frontend): https://github.com/bradtraversy/dj-events-frontend
+
+Project Overview:
 
 - next.js
 - Strapi (backend, se separate github repository)
@@ -10,7 +12,13 @@ The project uses:
 - Moment (date/time integration)
 - qs (querystring parsing and stringifying library)
 - react-icons/fa (fontawesome icons)
-- react toastify (toasts)
+- react toastify (toasts for popup messages)
+- AuthContext (authorization hook)
+- cookie (npm cookie to handle HTTPPnly Cookie)
+- mapbox (map location integration)
+- google maps/cloud platform (reverse engineering lng/lat)
+- Heroku (online backend deployment)
+- Vercel (hosting frontend)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
